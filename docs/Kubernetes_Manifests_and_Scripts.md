@@ -1,9 +1,5 @@
 # Kubernetes DevOps Assignment: Manifests and Scripts
 
-This file is a GitHub-friendly reference for the Kubernetes YAML manifests and helper scripts used by this assessment. It explains what each file does and includes its contents for easy review.
-
-> **Important:** The individual files under `k8s/` and `scripts/` remain the files used by the deployment. This document is a readable reference copy. If you change a manifest or script, update this document too so they stay in sync. The credentials shown in the PostgreSQL manifest are for local assessment use only and must not be used in production.
-
 ## Project resource order
 
 1. `k8s/namespace.yaml` — create the namespace.
@@ -683,10 +679,5 @@ curl -i http://localhost:8080/api/notes
 curl -i http://localhost:8080/web/
 ```
 
-## 10. Notes before assessment submission
 
-- Run the deployment and testing scripts on your own cluster and record the actual output. Do not mark a test PASS based only on the presence of files.
-- The local `hostPath` storage and single-node scheduling are suitable for this learning assessment, not a production high-availability design.
-- The `postgres-secret` contains demonstration credentials. Do not use real or sensitive credentials in a public GitHub repository.
-- Keep this reference document synchronized with the actual files in `k8s/` and `scripts/`.
 
